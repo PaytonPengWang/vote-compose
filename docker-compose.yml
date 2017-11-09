@@ -1,0 +1,10 @@
+version: '2'
+services:
+  votes:
+    image: daocloud.io/roywang/vote_server_votes:master-2874fe0
+    ports:
+      - 3001:3001
+  users:
+    image: daocloud.io/roywang/vote_service_user:master-2d673ed
+    ports:
+      - 3000:3000
